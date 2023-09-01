@@ -1,0 +1,351 @@
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: url(images/gojo\ copy.png) no-repeat center center fixed #000;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+@media (max-width: 860px) {
+  .navbar {
+    width: 100vw;
+  }
+}
+@media (max-width: 1100px) {
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: -40px;
+    /* margin-left: -40px; */
+  }
+  .right-image {
+    padding-left: 20px;
+  }
+}
+.link {
+  position: relative;
+}
+
+.link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: #0074d9;
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .link:hover::before {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 72px;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  font-weight: bold;
+  font-size: medium;
+  font-family: "Press Start 2P", cursive;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.header {
+  font-size: 24px;
+  color: #f9faf8;
+  padding: 16px;
+  font-family: "Bungee Shade", cursive;
+}
+
+.right-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  font-size: 24px;
+  color: #f9faf8;
+  padding: 16px;
+}
+
+ul {
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  font-family: "Poiret One", cursive;
+}
+.link {
+  text-decoration: none;
+  color: #f9faf8;
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 2em rgb(69, 69, 69);
+  color: white;
+  border-radius: 10px;
+}
+.left-container {
+  width: 35vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 20px;
+  padding-left: 60px;
+  justify-content: center;
+  align-items: center;
+}
+.left-title {
+  font-size: 2.2em;
+  text-shadow: 0 0 0.8em rgb(255, 255, 255);
+  text-align: center;
+
+  margin-top: 0;
+}
+.right-container {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.right-image {
+  display: flex;
+  justify-content: center;
+  width: 35vw;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+.right-img-desc {
+  text-align: center;
+}
+.right-img-credits {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+.description {
+  margin-top: 1em;
+  font-size: 1.1em;
+  line-height: 1.4em;
+  text-align: center;
+}
+/* .join-button {
+  color: black;
+  font-weight: bold;
+  background-color: violet;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  transition: background-color 1s;
+}
+.join-button:hover {
+  background-color: lightpink;
+}
+.join-button:focus,
+.join-button:active {
+  background-color: white;
+  transition: none;
+} */
+
+@-webkit-keyframes glow {
+  0% {
+    box-shadow: 0 0 0 0 #dc143c;
+  }
+  50% {
+    box-shadow: 0 0 30px 0 #dc143c;
+  }
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 0 0 #dc143c;
+  }
+  50% {
+    box-shadow: 0 0 30px 0 #dc143c;
+  }
+}
+.btn {
+  background: none;
+  color: inherit;
+  font: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-glow {
+  background: #dc143c;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 16px 34px;
+  border-radius: 2em;
+  margin-top: 20px;
+  box-shadow: 0 0 0 0 #dc143c;
+  -webkit-animation: glow 1.4s linear infinite;
+  animation: glow 1.4s linear infinite;
+}
+
+.layer-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-top: 100px;
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  background-color: rgba(0, 0, 0, 0.9);
+
+  /* box-shadow: 0 0 2em rgb(69, 69, 69); */
+}
+
+.layer-two-header {
+  font: 36px extra-bold white;
+  color: white;
+  font-weight: bold;
+  padding-bottom: 20px;
+  font-family: "Salsa", cursive;
+  margin-top: 20px;
+}
+
+.layer-two-containers {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+.gojo,
+.sukuna,
+.itadori,
+.yuta {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1 1 0;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.gojo-img,
+.sukuna-img,
+.itadori-img,
+.yuta-img {
+  flex: 1;
+  width: 13em;
+  height: 14em;
+  object-fit: cover;
+  border: 0.3em solid rgb(255, 255, 255);
+  border-radius: 1.5em;
+  box-shadow: 0 10px 30px black;
+  transition: 0.3s;
+  margin: -0.5em -1em -1em -1em;
+  margin-bottom: 10px;
+}
+/* img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+} */
+.gojo-img:hover,
+.sukuna-img:hover,
+.itadori-img:hover,
+.yuta-img:hover {
+  color: purple;
+  box-shadow: 0 5px 15px #afe0f5;
+}
+
+.gojo-name,
+.sukuna-name,
+.itadori-name,
+.yuta-name {
+  text-align: center;
+  color: white;
+  font-size: 1.7em;
+  margin: 1em 0 1em 0;
+  font-family: "lunatic";
+  z-index: 2;
+}
+
+.layer-three {
+  margin: 60px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.dialogue {
+  font-weight: bold;
+  font-size: 50px;
+  color: white;
+  font-family: "Alkatra", cursive;
+}
+.said {
+  font-weight: bold;
+  font-size: 50px;
+  color: white;
+  font-family: "Freehand", cursive;
+}
+
+.layer-four {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+  gap: 20px;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 2em rgb(69, 69, 69);
+  margin-bottom: 50px;
+}
+.call {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: white;
+}
+.action {
+  font-weight: bold;
+  color: white;
+}
+
+.wallpaper {
+  padding-top: 50px;
+  background: url(images/yuta-wallpaper.jpg) no-repeat center center fixed #000;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
